@@ -5,17 +5,16 @@
   <title>Cricket Game</title>
 </head>
 <body>
+  
   <h1>Bat Ball Stump Game</h1>
+
   <button onclick="
   let computerChoice = generateComputerChoice();
-  // const userChoiceMsg = '';
-  // const computerChoiceMsg = ``;
   let resultMsg = getResult('Bat', computerChoice);
   showResult('Bat', computerChoice, resultMsg);
   ">Bat</button>
 
   <button  onclick="
-  // const userChoiceMsg = '';
   computerChoice = generateComputerChoice();
   resultMsg = getResult('Ball', computerChoice);
   showResult('Ball', computerChoice, resultMsg);
@@ -33,13 +32,10 @@
       let randomNumber = Math.random()*3;
       if (randomNumber> 0 && randomNumber <= 1){
         return 'Bat';
-        // console.log('Computer choice is Bat ');
       }else if (randomNumber> 1 && randomNumber <= 2){
         return 'Ball';
-        // console.log('Computer choice is Ball ');
       }else{
         return 'Stump';
-        // console.log('Computer choice is Stump ');
       }
     }
 
