@@ -6,14 +6,43 @@
 <body>
   <script>
     let age= 21;
-    function yourAge(){
-      console.log(`Your age is ${age}`);
+    // function yourAge(){
+    //   console.log(`Your age is ${age}`);
+    // }
+    // yourAge();
+    // age = 23;
+    // yourAge();
+    // age = 32;
+    // yourAge();
+
+    // function generateRandomMove() {
+    //   let random = Math.random();
+    //   let randomMove = random * 3;
+    //   return randomMove;
+    // }
+
+    // let randomMove = generateRandomMove();
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+    // console.log(generateRandomMove());
+
+    function determineDriveStatus(){
+      let age = 21;
+      if (age === undefined){
+        return 'Aap avtar hai';
+      }
+      console.log('Check Driving Status')
+      if (age >= 18) {
+        return 'You can drive';
+      } else {
+        return 'Use a Bicycle';
+      }
     }
-    yourAge();
-    age = 23;
-    yourAge();
-    age = 32;
-    yourAge();
+    
+    console.log(determineDriveStatus());
+
   </script>
 </body>
 </html>
