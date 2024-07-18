@@ -18,3 +18,11 @@ var newArr2 = cloneArr2(abcd);
 console.log(newArr2);
 newArr2.pop();
 console.log(newArr2);
+
+function cloneArr3(arr3){
+  return arr3.map(function (e){
+    return e;
+  })
+}
+var newArr3 = cloneArr3([1, 2, 3, 4, 5]);
+console.log(newArr3);
